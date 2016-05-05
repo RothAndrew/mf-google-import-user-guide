@@ -21,7 +21,7 @@ Additionally, you may create and assign aliases to the following properties in M
 * Subject
 
 ##MF Google Import Configuration
-All MF Google Import configuration can be done from the MF Google Import configuration tool that was added to the desktop and start menu.
+All MF Google Import configuration can be done from the MF Google Import configuration tool that was added to the desktop and start menu. You may make changes to the configuration without restarting your vault. Each time MF Google Import runs it will retrieve any new configuration changes that were made.
 
 ###Licensing
 MF Google Import will not work without a license. To apply your license click the License Management button in the toolbar at the top of the window. Navigate to and click Apply License File. An Open File window will appear. Choose the license file that was sent to you and click Open.
@@ -40,4 +40,16 @@ To add an email address, click the + button next to the email addresses box. You
 To remove an email address, click the email address you'd like to remove, then click the - button next to the email addresses box.
 
 ###Gmail Main Label To Watch
-This is the name of the primary label under which all imported emails will be assigned. You may also add just this label to the email for it to be imported with no extra metadata.
+This is the name of the primary label under which all imported emails will be assigned. You may also add just this label to the email for it to be imported with no extra metadata (unless one of the sublabels is mapped to a required property).
+
+###Radio Button - Class is first secondary label
+If this radio button is selected, the first sublabel under the primary label is the name of the document class to use. The value needs to be the name of the class, not the alias.
+
+###Radio Button - Class is fixed
+If this radio button is selected, the document class for imported emails will be fixed to the value in the "Name of Fixed Class to Use" text field. The value needs to be the name of the class, not the alias.
+
+###Import Frequency
+The number of seconds MF Google Import waits between processing. If you change this value you need to restart your vault for it to take effect.
+
+###Radio Button - Import labeled emails only
+If this radio button is selected, only emails that you label will be imported. Other emails that are part of the same conversation that arrive later will not be imported. Please note that if you assign a label to a conversation all emails currently in that conversation will be imported.
