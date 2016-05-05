@@ -7,11 +7,11 @@ MF Google Import requires .NET Framework 4.5 or later. It also requires M-Files 
 MF Google Import can be installed using the MSI file provided on this page. It will create a desktop shortcut and start menu entry under Start>Programs>Andrew Roth Solution Development.
 
 ##M-Files Configuration
-MF Google Import requires the following properties to be aliased. You will be asked for the aliases in the MF Google Import Configuration Tool.
+MF Google Import requires the following properties to be created and aliased. You will be asked for the aliases in the MF Google Import Configuration Tool.
 * Message ID
 * Thread/Conversation ID
 
-Additionally, you may assign aliases to the following properties in M-Files.
+Additionally, you may create and assign aliases to the following properties in M-Files. If you define the aliases for these fields in the MF Google Import configuration tool the properties will be automatically added to the imported emails.
 * Send Date
 * Send Time
 * To Address
