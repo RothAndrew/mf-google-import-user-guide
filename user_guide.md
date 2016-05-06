@@ -93,3 +93,6 @@ Once you have the .zip file, open M-Files Admin tool, Right-Click your vault, cl
 If you are having issues, open the Windows Event Viewer application and navigate to Windows Logs > Application. All MF Google Import log entries will be made under the Source "MF Google Import".
 
 If you are having issues and you have a current Maintenance and Support contract, please contact your vendor for help.
+
+##Misc
+* We've noticed a rare error with MF Google Import that throws an error when trying to access the entries in the "Classes" value list. We've narrowed it down to see that it is an issue with some vault configuration because a new vault on the same server works just fine. Please contact your vendor if you are having this issue.
