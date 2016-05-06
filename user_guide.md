@@ -53,3 +53,41 @@ The number of seconds MF Google Import waits between processing. If you change t
 
 ###Radio Button - Import labeled emails only
 If this radio button is selected, only emails that you label will be imported. Other emails that are part of the same conversation that arrive later will not be imported. Please note that if you assign a label to a conversation all emails currently in that conversation will be imported.
+
+###Radio Button - Import unlabeled emails in a labeled conversation
+If this radio button is selected, emails in the same conversation will continue to be imported automatically. If you wish to stop the import of a particular conversation, you can remove the import label or add the "Imported to M-Files" label.
+
+###Secondary Label Levels
+Use sublabels underneath your primary label to set metadata. For example: If you wanted to organize and import emails for a certain company and topic you would set up your labels like this:
+
+ * MFIMPORT (main label)
+  * Joe's Fish Shack
+    * Lunch Orders
+
+Set up your secondary label levels in the configuration tool as shown:
+
+| Descriptions | Aliases                  |
+| ------------ | ------------------------ |
+| Company      | M-Files.Property.Company |
+| Topic        | M-Files.Property.Topic   |
+
+If you drop the label "MFIMPORT/Joe's Fish Shack/Lunch Orders" onto an email MF Google Import will import the message(s) with properties:
+
+| Property     | Value            |
+| ------------ | ---------------- |
+| Company      | Joe's Fish Shack |
+| Topic        | Lunch Orders     |
+
+###Message ID Alias
+Type the alias of the Message ID property in M-Files. MF Google Import will run an M-Files search using this property when importing messages. If the message ID it is looking for is already present in M-Files it won't import the message.
+
+###Thread ID Alias
+Type the alias of the Thread/Conversation ID property in M-Files. MF Google Import uses this property when controlling importing of conversations.
+
+##Installing the Vault App
+Once you are finished with configuration click Tools > Create Vault App Zip Package to create the .zip file that is used to install an M-Files Vault Application.
+
+Once you have the .zip file, open M-Files Admin tool, Right-Click your vault, click Applications, click Install, and navigate the the .zip file. After installing the vault app make sure the vault is restarted. M-Files will usually ask to restart the vault as soon as you install it.
+
+##Troubleshooting
+If you are having issues, open the Windows Event Viewer application and navigate to Windows Logs > Application. All MF Google Import log entries will be made under the Source "MF Google Import".
