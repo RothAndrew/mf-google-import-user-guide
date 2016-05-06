@@ -37,7 +37,7 @@ To request a license, please contact your vendor.
 ###Email Addresses
 To add an email address, click the + button next to the email addresses box. Your default browser will launch a window with a Google authentication prompt. Choose or type the email address you would like to add, then type the password. Once the email address and password are entered successfully and the new email address has been added to the list in the configuration tool you may close the browser window.
 
-To remove an email address, click the email address you'd like to remove, then click the - button next to the email addresses box.
+To remove an email address, click the email address you'd like to remove, then click the [-] button next to the email addresses box.
 
 ###Gmail Main Label To Watch
 This is the name of the primary label under which all imported emails will be assigned. You may also add just this label to the email for it to be imported with no extra metadata (unless one of the sublabels is mapped to a required property).
