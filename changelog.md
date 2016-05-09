@@ -6,3 +6,6 @@
 * Clarified wording in config tool
 * Added ability to send user an email if an import fails
 * Fixed gmail search to actually find all emails instead of just the first page (oops!)
+
+#v0.0.7.0
+* bug fixes
