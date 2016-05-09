@@ -51,11 +51,10 @@ If this radio button is selected, the document class for imported emails will be
 ###Import Frequency
 The number of seconds MF Google Import waits between processing. If you change this value you need to restart your vault for it to take effect.
 
-###Radio Button - Import labeled emails only
-If this radio button is selected, only emails that you label will be imported. Other emails that are part of the same conversation that arrive later will not be imported. Please note that if you assign a label to a conversation all emails currently in that conversation will be imported.
+###Radio Button - Import New Messages In a Conversation
+If yes is selected, only emails that you label will be imported. Other emails that are part of the same conversation that arrive later will not be imported. Please note that if you assign a label to a conversation all emails currently in that conversation will be imported.
 
-###Radio Button - Import unlabeled emails in a labeled conversation
-If this radio button is selected, emails in the same conversation will continue to be imported automatically. If you wish to stop the import of a particular conversation, you can remove the import label or add the "Imported to M-Files" label.
+If no is selected, emails in the same conversation will continue to be imported automatically. If you wish to stop the import of a particular conversation, you can remove the import label or add the "Imported to M-Files" label.
 
 ###Secondary Label Levels
 Use sublabels underneath your primary label to set metadata. For example: If you wanted to organize and import emails for a certain company and topic you would set up your labels like this:
