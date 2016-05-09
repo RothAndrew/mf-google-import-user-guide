@@ -9,3 +9,6 @@
 
 #v0.0.7.0
 * bug fixes
+
+#v0.0.8.0
+* If "Class is first secondary label" is chosen, and the primary label is assigned, the message will be imported with the default class
